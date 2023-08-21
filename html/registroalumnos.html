@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+
+    <!-- Agregar los enlaces a los archivos de jQuery y jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#fecha_alta").datepicker(); // Inicializar el selector de fecha
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $("#fecha_baja").datepicker(); // Inicializar el selector de fecha
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Registro de Alumnos</h1>
+
+    <form action="index.html">
+
+        <label for="matricula">Matricula:</label><br>
+        <input type="text" id="matricula" name="matricula"><br>
+        <label for="dni">Dni:</label><br>
+        <input type="text" id="dni" name="dni"><br>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="fecha_alta">Fecha de Alta:</label><br>
+        <input type="text" id="fecha_alta" name="fecha_alta" required><br>
+        <label for="fecha_baja">Fecha de Baja:</label><br>
+        <input type="text" id="fecha_baja" name="fecha_baja"><br>
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <footer>
+
+        <p>Caso de estudio. Diseño de software III (2023).</p>
+
+    </footer>
+
+</body>
+
+</html>
