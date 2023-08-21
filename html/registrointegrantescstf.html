@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Integrantes CSTF</title>
+
+    <!-- Agregar los enlaces a los archivos de jQuery y jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#fecha_ingreso").datepicker(); // Inicializar el selector de fecha
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Registro de Integrantes CSTF</h1>
+
+    <form action="index.html">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="cargo">Cargo:</label><br>
+        <input for="text" id="cargo" name="cargo"><br>
+        <label for="departamento">Departamento:</label><br>
+        <input for="text" id="departamento" name="departamento"><br>
+        <label for="fecha_ingreso">Fecha de Ingreso:</label><br>
+        <input type="date" id="fecha_ingreso" name="fecha_ingreso"><br>
+        <label for="contacto">Contacto:</label><br>
+        <input type="text" id="contacto" name="contacto"><br>
+        <label for="proyecto_asignado">Proyecto Asignado:</label><br>
+        <input type="text" id="proyecto_asignado" name="proyecto_asignado"><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <footer>
+
+        <p>Caso de estudio. Diseño de software III (2023).</p>
+
+    </footer>
+
+</body>
+
+</html>
