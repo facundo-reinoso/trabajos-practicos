@@ -4,33 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Integrantes del Tribunal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <title>Gestión de Trabajos Finales</title>
 </head>
 
 <body>
-    <h1>Registro Integrantes del Tribunal</h1>
 
-    <form action="index.html" method="post">
-        <label for="cuil">CUIL:</label>
-        <input type="text" id="cuil" name="cuil" required><br><br>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Gestión de Trabajos Finales</a>
+        </div>
+    </nav>
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card w-100 bg-dark text-white" style="max-width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Registro Integrantes del Tribunal</h5>
+                <form action="/html/index.html" method="post">
+                    <div class="mb-3">
+                        <label for="cuil" class="form-label">Cuil</label>
+                        <input type="text" class="form-control bg-dark-subtle" id="cuil" placeholder="CUIL">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control bg-dark-subtle" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control bg-dark-subtle" id="apellido" placeholder="Apellido">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required><br><br>
-
-        <label for="fecha_alta">Fecha de alta:</label>
-        <input type="date" id="fecha_alta" name="fecha_alta"><br><br>
-
-        <label for="fecha_baja">Fecha de baja:</label>
-        <input type="date" id="fecha_baja" name="fecha_baja"><br><br>
-
-        <input type="submit" value="Guardar">
-    </form>
-
-    <footer>
-        <p>Caso de estudio. Diseño de software III (2023).</p>
+    <footer class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <p>&copy; Caso de estudio. Diseño de software III (2023).</p>
+        </div>
     </footer>
 </body>
 
