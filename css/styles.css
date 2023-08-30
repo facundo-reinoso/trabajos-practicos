@@ -1,0 +1,22 @@
+body {
+    background-color: #343a40;
+}
+
+.main-container {
+    background-image: url('/images/laptop-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #004F94;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 28px;
+}
+
+.card-title {
+    font-family: 'Roboto Condensed', sans-serif;
+}
