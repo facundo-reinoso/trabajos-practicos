@@ -4,49 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Integrantes CSTF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <!-- Agregar los enlaces a los archivos de jQuery y jQuery UI -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/registrointegrantescstf.js"></script>
+    
 
-    <script>
-        $(function () {
-            $("#fecha_ingreso").datepicker(); // Inicializar el selector de fecha
-        });
-    </script>
-
+    <title>Registro Integrantes de la CSTF</title>
 </head>
 
 <body>
 
-    <h1>Registro de Integrantes CSTF</h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Gestión de Trabajos Finales</a>
+        </div>
+    </nav>
 
-    <form action="index.html">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="apellido">Apellido:</label><br>
-        <input type="text" id="apellido" name="apellido"><br>
-        <label for="cargo">Cargo:</label><br>
-        <input for="text" id="cargo" name="cargo"><br>
-        <label for="departamento">Departamento:</label><br>
-        <input for="text" id="departamento" name="departamento"><br>
-        <label for="fecha_ingreso">Fecha de Ingreso:</label><br>
-        <input type="date" id="fecha_ingreso" name="fecha_ingreso"><br>
-        <label for="contacto">Contacto:</label><br>
-        <input type="text" id="contacto" name="contacto"><br>
-        <label for="proyecto_asignado">Proyecto Asignado:</label><br>
-        <input type="text" id="proyecto_asignado" name="proyecto_asignado"><br>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card w-100 bg-dark text-white" style="max-width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title text-center">Registro Integrantes de la CSTF</h5>
+                <form action="/html/index.html" method="post">
 
-        <input type="submit" value="Submit">
+                    <div class="mb-3">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" class="form-control bg-dark-subtle" id="nombre" name="nombre"
+                            placeholder="Nombre"><br>
 
-    </form>
+                    </div>
 
-    <footer>
+                    <div class="mb-3">
+                        <label for="apellido">Apellido:</label><br>
+                        <input type="text" class="form-control bg-dark-subtle" id="apellido" name="apellido"
+                            placeholder="Apellido"><br>
 
-        <p>Caso de estudio. Diseño de software III (2023).</p>
+                    </div>
 
+                    <div class="mb-3">
+                        <label for="cargo">Cargo:</label><br>
+                        <input type="text" class="form-control bg-dark-subtle" id="cargo" name="cargo"
+                            placeholder="Cargo"><br>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="departamento">Departamento:</label><br>
+                        <input type="text" class="form-control bg-dark-subtle" id="departamento" name="departamento"
+                            placeholder="Departamento"><br>
+
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="fecha_ingreso">Fecha de Ingreso:</label><br>
+                        <input type="text" class="form-control bg-dark-subtle" id="fecha_ingreso" name="fecha_ingreso"
+                            placeholder="Fecha de Ingreso"><br>
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="contacto">Contacto:</label><br>
+                        <input type="text" class="form-control bg-dark-subtle" id="contacto" name="contacto"
+                            placeholder="Contacto"><br>
+
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="proyecto_asignado">Proyecto Asignado:</label><br>
+                        <input type="text" class="form-control bg-dark-subtle" id="proyecto_asignado"
+                            name="proyecto_asignado" placeholder="Proyecto Asignado"><br>
+
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <p>&copy; Caso de estudio. Diseño de software III (2023).</p>
+        </div>
     </footer>
 
 </body>

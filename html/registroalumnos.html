@@ -4,74 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Alumnos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <!-- Agregar los enlaces a los archivos de jQuery y jQuery UI -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/registroalumnos.js"></script>
 
-    <script>
-        $(function () {
-            $("#fecha_alta").datepicker(); // Inicializar el selector de fecha
-        });
-    </script>
-
-    <script>
-        $(function () {
-            $("#fecha_baja").datepicker(); // Inicializar el selector de fecha
-        });
-    </script>
-
+    <title>Registro de Alumnos</title>
 </head>
 
 <body>
 
-    <div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Gestión de Trabajos Finales</a>
+        </div>
+    </nav>
 
-        <h1>Registro de Alumnos</h1>
+    <div class="container">
+        <div class="row">
 
-        <form action="index.html">
+            <div class="col-lg-6">
+                <div class="container d-flex justify-content-center align-items-center min-vh-100">
+                    <div class="card w-100 bg-dark text-white" style="max-width: 400px;">
+                        <div class="card-body">
 
-            <label for="matricula">Matricula:</label><br>
-            <input type="text" id="matricula" name="matricula"><br>
-            <label for="dni">Dni:</label><br>
-            <input type="text" id="dni" name="dni"><br>
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="apellido">Apellido:</label><br>
-            <input type="text" id="apellido" name="apellido"><br>
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="fecha_alta">Fecha de Alta:</label><br>
-            <input type="text" id="fecha_alta" name="fecha_alta" required><br>
-            <label for="fecha_baja">Fecha de Baja:</label><br>
-            <input type="text" id="fecha_baja" name="fecha_baja"><br>
+                            <h5 class="card-title text-center">Registro de Alumnos</h5>
 
-            <input type="submit" value="Submit">
+                            <form action="/html/index.html" method="post">
+
+                                <div class="mb-3">
+                                    <label for="matricula">Matricula:</label><br>
+                                    <input type="text" class="form-control bg-dark-subtle" id="matricula"
+                                        name="matricula"><br>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="dni">Dni:</label><br>
+                                    <input type="text" class="form-control bg-dark-subtle" id="dni" name="dni"><br>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nombre">Nombre:</label><br>
+                                    <input type="text" class="form-control bg-dark-subtle" id="nombre"
+                                        name="nombre"><br>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="apellido">Apellido:</label><br>
+                                    <input type="text" class="form-control bg-dark-subtle" id="apellido"
+                                        name="apellido"><br>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email">Correo Electrónico:</label><br>
+                                    <input type="email" class="form-control bg-dark-subtle" id="email" name="email"
+                                        required><br>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fecha_alta">Fecha de Alta:</label><br>
+                                    <input type="text" class="form-control bg-dark-subtle" id="fecha_alta"
+                                        name="fecha_alta" required><br>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fecha_baja">Fecha de Baja:</label><br>
+                                    <input type="text" class="form-control bg-dark-subtle" id="fecha_baja"
+                                        name="fecha_baja"><br>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
-        </form>
+            <div class="col-lg-6">
+                <div class="container d-flex justify-content-center align-items-center min-vh-100">
+                    <div class="card w-100 bg-dark text-white" style="max-width: 400px;">
+                        <div class="card-body">
 
+                            <h2>Alumnos Registrados</h2>
+
+                            <ul>
+                                <li>Emmanuel Castro</li>
+                                <li>Facundo Reinoso</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div>
 
-        <h2>Alumnos Registrados</h2>
-
-        <ul>
-            <li>Emmanuel Castro</li>
-            <li>Facundo Reinoso</li>
-        </ul>
-
-
-    </div>
-
-
-    <footer>
-
-        <p>Caso de estudio. Diseño de software III (2023).</p>
-
+    <footer class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <p>&copy; Caso de estudio. Diseño de software III (2023).</p>
+        </div>
     </footer>
 
 </body>
