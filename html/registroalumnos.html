@@ -37,7 +37,7 @@
 
                             <h5 class="card-title text-center">Registro de Alumnos</h5>
 
-                            <form action="/html/index.html" method="post">
+                            <form id="form">
 
                                 <div class="mb-3">
                                     <label for="matricula">Matricula:</label><br>
@@ -74,7 +74,7 @@
                                         name="fecha_baja"><br>
                                 </div>
                                 <div class="d-grid gap-2">
-                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                    <button type="button" class="btn btn-primary" id="submit">Registrar</button>
                                 </div>
 
                             </form>
@@ -95,9 +95,8 @@
 
                             <h2>Alumnos Registrados</h2>
 
-                            <ul>
-                                <li>Emmanuel Castro</li>
-                                <li>Facundo Reinoso</li>
+                            <ul id="listaEstudiantes">
+
                             </ul>
 
                         </div>
