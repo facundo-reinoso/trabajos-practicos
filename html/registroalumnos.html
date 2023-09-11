@@ -29,86 +29,61 @@
 
     <div class="container">
         <div class="row">
-
             <div class="col-lg-6">
                 <div class="container d-flex justify-content-center align-items-center min-vh-100">
                     <div class="card w-100 bg-dark text-white" style="max-width: 400px;">
                         <div class="card-body">
-
                             <h5 class="card-title text-center">Registro de Alumnos</h5>
-
-                            <form id="form">
-
+                            <form action="/html/index.html" method="post" id="form">
                                 <div class="mb-3">
-                                    <label for="matricula">Matricula:</label><br>
-                                    <input type="text" class="form-control bg-dark-subtle" id="matricula"
-                                        name="matricula"><br>
+                                    <label for="matricula" class="form-label">Matricula:</label>
+                                    <input type="text" class="form-control bg-dark-subtle" id="matricula" placeholder="Matricula">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="dni">Dni:</label><br>
-                                    <input type="text" class="form-control bg-dark-subtle" id="dni" name="dni"><br>
+                                    <label for="dni" class="form-label">Dni:</label>
+                                    <input type="text" class="form-control bg-dark-subtle" id="dni" placeholder="DNI">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="nombre">Nombre:</label><br>
-                                    <input type="text" class="form-control bg-dark-subtle" id="nombre"
-                                        name="nombre"><br>
+                                    <label for="nombre" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control bg-dark-subtle" id="nombre" placeholder="Nombre">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="apellido">Apellido:</label><br>
-                                    <input type="text" class="form-control bg-dark-subtle" id="apellido"
-                                        name="apellido"><br>
+                                    <label for="apellido" class="form-label">Apellido:</label>
+                                    <input type="text" class="form-control bg-dark-subtle" id="apellido" placeholder="Apellido">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email">Correo Electrónico:</label><br>
-                                    <input type="email" class="form-control bg-dark-subtle" id="email" name="email"
-                                        required><br>
+                                    <label for="email" class="form-label">Correo Electrónico:</label>
+                                    <input type="email" class="form-control bg-dark-subtle" id="email" placeholder="Email">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="fecha_alta">Fecha de Alta:</label><br>
-                                    <input type="text" class="form-control bg-dark-subtle" id="fecha_alta"
-                                        name="fecha_alta" required><br>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="fecha_baja">Fecha de Baja:</label><br>
-                                    <input type="text" class="form-control bg-dark-subtle" id="fecha_baja"
-                                        name="fecha_baja"><br>
+                                    <label for="fecha_alta" class="form-label">Fecha de Alta:</label>
+                                    <input type="text" class="form-control bg-dark-subtle" id="fecha_alta" placeholder="Fecha alta">
                                 </div>
                                 <div class="d-grid gap-2">
                                     <button type="button" class="btn btn-primary" id="submit">Registrar</button>
                                 </div>
-
                             </form>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
 
             <div class="col-lg-6">
                 <div class="container d-flex justify-content-center align-items-center min-vh-100">
                     <div class="card w-100 bg-dark text-white" style="max-width: 400px;">
                         <div class="card-body">
-
-                            <h2>Alumnos Registrados</h2>
-
+                            <h2 class="card-title text-center">Alumnos Registrados</h2>
                             <ul id="listaEstudiantes">
 
                             </ul>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
         </div>
     </div>
 
+    <div id="error-message" class="mt-3 text-center" style="color: red;"></div>
 
     <footer class="bg-dark text-white text-center py-2">
         <div class="container">
